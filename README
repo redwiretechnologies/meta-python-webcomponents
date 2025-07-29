@@ -1,0 +1,42 @@
+This README file contains information on the contents of the meta-python3-webcomponents layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: git://github.com/openembedded/openembedded-core.git
+  branch: scarthgap
+
+  URI: git://github.com/openembedded/meta-openembedded.git
+  branch: scarthgap
+
+ From meta-openembedded, you need the following layers:
+  meta-oe
+  meta-python
+
+
+Patches
+=======
+
+Please submit any patches against the meta-python3-webcomponents layer to a github PR or issue
+and cc: the maintainer:
+
+Maintainer: Toby Flynn  <tflynn@redwiretechnology.com>
+
+Table of Contents
+=================
+
+  I. Adding the meta-python3-webcomponents layer to your build
+ II. Misc
+
+
+I. Adding the meta-python3-webcomponents layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-python3-webcomponents'
+
+II. Misc
+========
+
+--- This layer builds on meta-python to add packages for fastapi and other python packages useful for embedded web servers ---

@@ -1,0 +1,21 @@
+From 0a2f7b6ec1f02c69ef0d1c3b76319df9dbd47611 Mon Sep 17 00:00:00 2001
+From: Toby Flynn <tflynn@redwiretechnology.com>
+Date: Thu, 17 Jul 2025 20:56:38 -0400
+Subject: [PATCH] fix to use PEP 517 poetry-core
+
+---
+ pyproject.toml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index e175084..a9efc38 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -30,5 +30,5 @@ enum-compat = { version = "^0.0.2", python = "~2.7" }   # for py27/pyscss
+ 
+ 
+ [build-system]
+-requires = ["poetry>=0.12"]
+-build-backend = "poetry.masonry.api"
++requires = ["poetry-core>=1.0.0"]
++build-backend = "poetry.core.masonry.api"
